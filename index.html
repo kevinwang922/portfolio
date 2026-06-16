@@ -1,274 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Economics | Understanding the World</title>
+<title>Economics Portfolio | Your Name</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Inter", "Segoe UI", sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Inter","Segoe UI",sans-serif;
 }
 
 body{
-    background:#f5f7fb;
-    color:#10243e;
-    line-height:1.6;
-    overflow-x:hidden;
+background:#f7f8fa;
+color:#122033;
+line-height:1.7;
 }
 
 nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(255,255,255,.75);
-    backdrop-filter:blur(12px);
-    z-index:10;
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+background:#ffffffcc;
+backdrop-filter:blur(15px);
+z-index:10;
 }
 
 .logo{
-    font-size:24px;
-    font-weight:800;
-    color:#0b2d55;
+font-weight:800;
+font-size:24px;
 }
 
 nav a{
-    margin-left:25px;
-    text-decoration:none;
-    color:#334;
-    font-size:15px;
+text-decoration:none;
+margin-left:25px;
+color:#334;
 }
+
 
 section{
-    padding:100px 8%;
+padding:110px 8%;
 }
+
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    position:relative;
+
+min-height:100vh;
+display:flex;
+align-items:center;
+
 }
+
 
 .hero h1{
-    font-size:64px;
-    max-width:700px;
-    line-height:1.1;
+
+font-size:70px;
+line-height:1.1;
+
 }
+
 
 .hero span{
-    color:#16805c;
+
+color:#197653;
+
 }
+
 
 .hero p{
-    margin:25px 0;
-    font-size:20px;
-    max-width:600px;
-    color:#526174;
+
+font-size:21px;
+max-width:650px;
+margin:30px 0;
+color:#536174;
+
 }
 
-button{
-    background:#10243e;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    border-radius:30px;
-    cursor:pointer;
-    transition:.3s;
+
+
+.btn{
+
+padding:15px 35px;
+background:#122033;
+color:white;
+border-radius:30px;
+text-decoration:none;
+
 }
 
-button:hover{
-    transform:translateY(-4px);
-    background:#16805c;
+
+
+.card-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+
 }
 
-.graph{
-    position:absolute;
-    right:8%;
-    width:380px;
-    height:220px;
-    background:white;
-    border-radius:25px;
-    box-shadow:0 20px 50px #0002;
-    overflow:hidden;
-}
-
-.line{
-    position:absolute;
-    bottom:40px;
-    left:20px;
-    width:320px;
-    height:120px;
-    border-left:3px solid #16805c;
-    border-bottom:3px solid #16805c;
-}
-
-.line:after{
-    content:"";
-    position:absolute;
-    width:300px;
-    height:100px;
-    border-top:4px solid #16805c;
-    transform:rotate(-18deg);
-    top:30px;
-    left:20px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:25px;
-}
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:22px;
-    box-shadow:0 10px 30px #0001;
-    transition:.3s;
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 15px 40px #0001;
+transition:.3s;
+
 }
+
 
 .card:hover{
-    transform:translateY(-8px);
+
+transform:translateY(-8px);
+
 }
 
-.card h3{
-    margin-bottom:15px;
+
+
+.number{
+
+font-size:40px;
+font-weight:800;
+color:#197653;
+
 }
 
-.dashboard{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-}
 
-.metric{
-    background:#10243e;
-    color:white;
-    padding:25px;
-    border-radius:20px;
-}
-
-.metric h2{
-    color:#7ee0b5;
-}
-
-.chart{
-    height:180px;
-    margin-top:30px;
-    background:white;
-    border-radius:20px;
-    position:relative;
-    overflow:hidden;
-}
-
-.bar{
-    position:absolute;
-    bottom:0;
-    width:30px;
-    background:#16805c;
-    animation:grow 2s infinite alternate;
-}
-
-@keyframes grow{
-    from{height:30px}
-    to{height:140px}
-}
 
 .timeline{
-    border-left:3px solid #16805c;
-    padding-left:30px;
+
+border-left:3px solid #197653;
+padding-left:30px;
+
 }
 
-.event{
-    margin:30px 0;
+
+.item{
+
+margin:35px 0;
+
 }
 
-.question{
-    background:#10243e;
-    color:white;
-    border-radius:30px;
-    padding:50px;
+
+
+.research{
+
+background:#122033;
+color:white;
+border-radius:30px;
+padding:50px;
+
 }
+
+
 
 footer{
-    text-align:center;
-    padding:40px;
-    color:#667;
+
+text-align:center;
+padding:40px;
+color:#667;
+
 }
 
-.fade{
-    animation:fade 1.2s ease;
-}
-
-@keyframes fade{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:none;
-    }
-}
-
-@media(max-width:900px){
-    .hero h1{
-        font-size:42px;
-    }
-    .graph{
-        display:none;
-    }
-}
 
 </style>
+
 </head>
+
 
 
 <body>
 
+
 <nav>
-<div class="logo">EconLab</div>
+
+<div class="logo">
+Your Name
+</div>
 
 <div>
-<a href="#ideas">Ideas</a>
-<a href="#data">Data</a>
-<a href="#history">History</a>
+
+<a href="#about">About</a>
+<a href="#work">Work</a>
+<a href="#research">Research</a>
+
 </div>
+
 </nav>
 
 
-<section class="hero fade">
+
+
+<section class="hero">
+
 
 <div>
+
 <h1>
-Understanding the World
-Through <span>Economics</span>
+
+Economics.
+<br>
+
+Ideas.
+<br>
+
+<span>Institutions.</span>
+
 </h1>
 
+
 <p>
-Economics is not only about money. 
-It studies incentives, institutions, markets,
-and the choices humans make under scarcity.
+
+I am an economics student interested in understanding
+how incentives, institutions and human choices shape
+societies.
+
 </p>
 
-<button>
-Explore Economics
-</button>
 
-</div>
+<a class="btn" href="#about">
+Explore My Journey
+</a>
 
 
-<div class="graph">
-<div class="line"></div>
 </div>
 
 
@@ -276,90 +239,156 @@ Explore Economics
 
 
 
-<section id="ideas">
 
-<h2>Core Economic Ideas</h2>
+
+<section id="about">
+
+
+<h2>
+About Me
+</h2>
+
 
 <br>
 
-<div class="grid">
 
-<div class="card">
-<h3>Supply & Demand</h3>
-<p>
-Prices emerge from interaction between scarcity,
-preferences and market forces.
-</p>
-</div>
+<div class="card-grid">
 
 
 <div class="card">
-<h3>Game Theory</h3>
+
+<h3>
+Academic Interest
+</h3>
+
 <p>
-Individual decisions interact strategically,
-creating unexpected outcomes.
+
+My interest lies in political economy,
+economic history and the relationship between
+institutions and development.
+
 </p>
+
 </div>
+
 
 
 <div class="card">
-<h3>Macroeconomics</h3>
+
+<h3>
+How I Think
+</h3>
+
 <p>
-Growth, inflation and unemployment shape the
-large-scale economy.
+
+I enjoy questioning simple explanations:
+why some societies grow, why institutions differ,
+and how incentives shape human behaviour.
+
 </p>
+
+
 </div>
+
 
 
 <div class="card">
-<h3>Behavioral Economics</h3>
+
+<h3>
+Future Direction
+</h3>
+
 <p>
-Humans are not perfect calculators.
-Psychology influences economic choices.
+
+Aspiring to study economics and explore
+research at the intersection of economics,
+history and philosophy.
+
 </p>
-</div>
 
 
 </div>
+
+
+
+</div>
+
 
 </section>
 
 
 
 
-<section id="data">
 
-<h2>Economic Dashboard</h2>
+
+<section id="work">
+
+
+<h2>
+Achievements & Experience
+</h2>
+
 
 <br>
 
-<div class="dashboard">
 
-<div class="metric">
-GDP Growth
-<h2>5.2%</h2>
+<div class="card-grid">
+
+
+<div class="card">
+
+<div class="number">
+BPhO
 </div>
 
-<div class="metric">
-Inflation
-<h2>2.4%</h2>
-</div>
-
-
-<div class="metric">
-Employment
-<h2>96%</h2>
-</div>
+<p>
+Physics competition achievement
+</p>
 
 </div>
 
 
-<div class="chart">
 
-<div class="bar" style="left:50px"></div>
-<div class="bar" style="left:110px;animation-delay:.3s"></div>
-<div class="bar" style="left:170px;animation-delay:.6s"></div>
-<div class="bar" style="left:230px;animation-delay:.9s"></div>
+<div class="card">
+
+<div class="number">
+BMO
+</div>
+
+<p>
+Mathematical problem solving experience
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="number">
+IEO
+</div>
+
+<p>
+Economics competition experience
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="number">
+Research
+</div>
+
+<p>
+Exploring economics through academic projects
+</p>
+
+</div>
+
 
 </div>
 
@@ -369,98 +398,129 @@ Employment
 
 
 
-<section id="history">
 
-<h2>Economic Thinkers</h2>
+
+<section id="research">
+
+
+<div class="research">
+
+
+<h2>
+Research Interests
+</h2>
+
 
 <br>
 
-<div class="timeline">
 
-<div class="event">
-<h3>Adam Smith</h3>
 <p>
-Markets, division of labour, and the invisible hand.
+
+My current intellectual interests include:
+
+<br><br>
+
+• Why did capitalism emerge in Europe rather than elsewhere?
+
+<br>
+
+• How do institutions influence economic development?
+
+<br>
+
+• Can economic models explain historical change?
+
+<br>
+
+• What is the relationship between efficiency and fairness?
+
 </p>
-</div>
-
-
-<div class="event">
-<h3>John Maynard Keynes</h3>
-<p>
-Demand management and the role of government.
-</p>
-</div>
-
-
-<div class="event">
-<h3>Friedrich Hayek</h3>
-<p>
-Knowledge, prices and spontaneous order.
-</p>
-</div>
-
-
-<div class="event">
-<h3>Amartya Sen</h3>
-<p>
-Development, welfare and human capability.
-</p>
-</div>
 
 
 </div>
+
 
 </section>
+
+
 
 
 
 
 <section>
 
-<div class="question">
 
 <h2>
-The deeper questions of economics
+Academic Timeline
 </h2>
 
+
 <br>
 
+
+<div class="timeline">
+
+
+<div class="item">
+
+<h3>
+Early Exploration
+</h3>
+
 <p>
-Are markets natural or designed?
-<br>
-Can efficiency exist without fairness?
-<br>
-Does economic growth always improve human life?
+Developing interests in mathematics,
+history and social sciences.
 </p>
 
 </div>
+
+
+
+<div class="item">
+
+<h3>
+Competitions & Research
+</h3>
+
+<p>
+Combining quantitative skills with economic thinking.
+</p>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+Future Goal
+</h3>
+
+<p>
+Studying economics and contributing to research.
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
 
+
 <footer>
 
-"Economic science is the study of mankind in the ordinary business of life."
+"Understanding society requires understanding choices."
 
 <br><br>
 
-© 2026 EconLab
+Economics Portfolio
 
 </footer>
 
-
-
-<script>
-
-document.querySelector("button")
-.onclick=function(){
-document.querySelector("#ideas")
-.scrollIntoView({behavior:"smooth"});
-}
-
-</script>
 
 
 </body>
