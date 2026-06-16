@@ -1,318 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Economics Portfolio | Your Name</title>
+<title>Your Name | Economics & Research</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Inter","Segoe UI",sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-body{
-background:#f7f8fa;
-color:#122033;
-line-height:1.7;
+html {
+    scroll-behavior: smooth;
 }
 
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-background:#ffffffcc;
-backdrop-filter:blur(15px);
-z-index:10;
+body {
+    background: #070b18;
+    color: #f5f7ff;
+    line-height: 1.6;
 }
 
-.logo{
-font-weight:800;
-font-size:24px;
+/* Navigation */
+
+nav {
+    position: fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(7,11,24,0.75);
+    backdrop-filter: blur(12px);
+    z-index:100;
 }
 
-nav a{
-text-decoration:none;
-margin-left:25px;
-color:#334;
+.logo {
+    font-size:22px;
+    font-weight:700;
+}
+
+nav a {
+    color:#ccc;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover {
+    color:#6ea8ff;
 }
 
 
-section{
-padding:110px 8%;
+/* Hero */
+
+.hero {
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 10%;
+}
+
+.hero-content {
+    max-width:900px;
+}
+
+.hero h1 {
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero span {
+    color:#6ea8ff;
+}
+
+.hero p {
+    font-size:22px;
+    color:#b8bfd6;
+    max-width:700px;
+}
+
+.buttons {
+    margin-top:35px;
+}
+
+button {
+    padding:14px 28px;
+    border-radius:30px;
+    border:none;
+    margin-right:15px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.primary {
+    background:#6ea8ff;
+    color:white;
+}
+
+.secondary {
+    background:transparent;
+    border:1px solid #555;
+    color:white;
+}
+
+button:hover {
+    transform:translateY(-3px);
 }
 
 
-.hero{
+/* Sections */
 
-min-height:100vh;
-display:flex;
-align-items:center;
-
+section {
+    padding:100px 10%;
 }
 
+.title {
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+
+.card {
+    background:#11182c;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s;
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    border-color:#6ea8ff;
+}
+
+.card h3 {
+    margin-bottom:15px;
+    color:#8ab8ff;
+}
+
+
+/* Quote */
+
+.quote {
+    text-align:center;
+    background:#0d1326;
+    padding:80px 15%;
+    font-size:28px;
+    font-style:italic;
+}
+
+
+/* Timeline */
+
+.timeline div {
+    margin-bottom:20px;
+    padding:25px;
+    background:#11182c;
+    border-radius:15px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align:center;
+    padding:40px;
+    color:#888;
+}
+
+
+/* Animation */
+
+.fade {
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.fade.show {
+    opacity:1;
+    transform:none;
+}
+
+
+@media(max-width:700px){
 
 .hero h1{
-
-font-size:70px;
-line-height:1.1;
-
+    font-size:42px;
 }
-
-
-.hero span{
-
-color:#197653;
-
-}
-
 
 .hero p{
-
-font-size:21px;
-max-width:650px;
-margin:30px 0;
-color:#536174;
-
+    font-size:18px;
 }
 
-
-
-.btn{
-
-padding:15px 35px;
-background:#122033;
-color:white;
-border-radius:30px;
-text-decoration:none;
-
+nav {
+    padding:15px;
 }
 
-
-
-.card-grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-
+nav div:last-child {
+    display:none;
 }
 
-
-.card{
-
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 15px 40px #0001;
-transition:.3s;
-
 }
-
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-
-
-.number{
-
-font-size:40px;
-font-weight:800;
-color:#197653;
-
-}
-
-
-
-.timeline{
-
-border-left:3px solid #197653;
-padding-left:30px;
-
-}
-
-
-.item{
-
-margin:35px 0;
-
-}
-
-
-
-.research{
-
-background:#122033;
-color:white;
-border-radius:30px;
-padding:50px;
-
-}
-
-
-
-footer{
-
-text-align:center;
-padding:40px;
-color:#667;
-
-}
-
-
 </style>
 
 </head>
-
 
 
 <body>
 
 
 <nav>
-
 <div class="logo">
-Your Name
+YOUR NAME
 </div>
 
 <div>
-
 <a href="#about">About</a>
 <a href="#work">Work</a>
-<a href="#research">Research</a>
-
+<a href="#contact">Contact</a>
 </div>
-
 </nav>
-
 
 
 
 <section class="hero">
 
-
-<div>
+<div class="hero-content fade">
 
 <h1>
-
-Economics.
-<br>
-
-Ideas.
-<br>
-
-<span>Institutions.</span>
-
+Hello, I'm <span>Your Name</span>.
 </h1>
 
-
 <p>
-
-I am an economics student interested in understanding
-how incentives, institutions and human choices shape
-societies.
-
+A student exploring economics, mathematics, history and philosophy.
+I am interested in understanding how institutions shape human societies.
 </p>
 
 
-<a class="btn" href="#about">
-Explore My Journey
+<div class="buttons">
+
+<a href="#work">
+<button class="primary">
+View My Work
+</button>
 </a>
 
 
+<a href="#contact">
+<button class="secondary">
+Contact Me
+</button>
+</a>
+
 </div>
 
+</div>
 
 </section>
 
 
 
 
-
 <section id="about">
 
-
-<h2>
+<h2 class="title fade">
 About Me
 </h2>
 
 
-<br>
+<div class="grid">
 
-
-<div class="card-grid">
-
-
-<div class="card">
+<div class="card fade">
 
 <h3>
-Academic Interest
+Economics
 </h3>
 
 <p>
-
-My interest lies in political economy,
-economic history and the relationship between
-institutions and development.
-
+Exploring economic theory, development, incentives and the relationship between institutions and growth.
 </p>
 
 </div>
 
 
-
-<div class="card">
+<div class="card fade">
 
 <h3>
-How I Think
+Mathematics
 </h3>
 
 <p>
-
-I enjoy questioning simple explanations:
-why some societies grow, why institutions differ,
-and how incentives shape human behaviour.
-
+Using mathematical thinking and modelling to solve complex problems.
 </p>
-
 
 </div>
 
 
-
-<div class="card">
+<div class="card fade">
 
 <h3>
-Future Direction
+History & Philosophy
 </h3>
 
 <p>
-
-Aspiring to study economics and explore
-research at the intersection of economics,
-history and philosophy.
-
+Studying how ideas, systems and political structures influence human civilization.
 </p>
 
-
 </div>
 
 
+<div class="card fade">
+
+<h3>
+Programming
+</h3>
+
+<p>
+Applying computational methods to analyze problems and build useful tools.
+</p>
 
 </div>
 
+</div>
 
 </section>
 
@@ -323,125 +346,61 @@ history and philosophy.
 
 <section id="work">
 
-
-<h2>
-Achievements & Experience
+<h2 class="title fade">
+Projects & Achievements
 </h2>
 
 
-<br>
+<div class="grid">
 
 
-<div class="card-grid">
+<div class="card fade">
 
-
-<div class="card">
-
-<div class="number">
-BPhO
-</div>
+<h3>
+Economics Research
+</h3>
 
 <p>
-Physics competition achievement
+Investigating economic systems, institutions and social development through research.
 </p>
 
 </div>
 
 
 
-<div class="card">
+<div class="card fade">
 
-<div class="number">
-BMO
-</div>
+<h3>
+Mathematical Modelling
+</h3>
 
 <p>
-Mathematical problem solving experience
+Applying mathematical frameworks to understand real-world problems.
 </p>
 
 </div>
 
 
 
-<div class="card">
 
-<div class="number">
-IEO
-</div>
+<div class="card fade">
+
+<h3>
+Law & Economics
+</h3>
 
 <p>
-Economics competition experience
+Exploring how legal structures influence economic outcomes and incentives.
 </p>
 
 </div>
 
-
-
-<div class="card">
-
-<div class="number">
-Research
-</div>
-
-<p>
-Exploring economics through academic projects
-</p>
-
-</div>
 
 
 </div>
 
 
 </section>
-
-
-
-
-
-
-<section id="research">
-
-
-<div class="research">
-
-
-<h2>
-Research Interests
-</h2>
-
-
-<br>
-
-
-<p>
-
-My current intellectual interests include:
-
-<br><br>
-
-• Why did capitalism emerge in Europe rather than elsewhere?
-
-<br>
-
-• How do institutions influence economic development?
-
-<br>
-
-• Can economic models explain historical change?
-
-<br>
-
-• What is the relationship between efficiency and fairness?
-
-</p>
-
-
-</div>
-
-
-</section>
-
 
 
 
@@ -449,58 +408,90 @@ My current intellectual interests include:
 
 <section>
 
-
-<h2>
-Academic Timeline
+<h2 class="title fade">
+Academic Journey
 </h2>
-
-
-<br>
 
 
 <div class="timeline">
 
 
-<div class="item">
+<div class="fade">
 
-<h3>
-Early Exploration
-</h3>
+<strong>
+2025 - Present
+</strong>
 
 <p>
-Developing interests in mathematics,
-history and social sciences.
+Independent exploration of economics, mathematics and social sciences.
 </p>
 
 </div>
 
 
 
-<div class="item">
+<div class="fade">
 
-<h3>
+<strong>
 Competitions & Research
-</h3>
+</strong>
 
 <p>
-Combining quantitative skills with economic thinking.
+Mathematical competitions, economics projects and academic writing.
 </p>
 
 </div>
 
 
+</div>
 
-<div class="item">
 
-<h3>
-Future Goal
-</h3>
+</section>
 
-<p>
-Studying economics and contributing to research.
-</p>
+
+
+
+
+
+
+<div class="quote">
+
+"The world is not only a collection of facts,
+but a system of relationships waiting to be understood."
 
 </div>
+
+
+
+
+
+
+
+<section id="contact">
+
+<h2 class="title fade">
+Contact
+</h2>
+
+
+<div class="card fade">
+
+<p>
+Email:
+your.email@example.com
+</p>
+
+
+<p>
+GitHub:
+github.com/yourname
+</p>
+
+
+<p>
+LinkedIn:
+linkedin.com/in/yourname
+</p>
 
 
 </div>
@@ -513,14 +504,36 @@ Studying economics and contributing to research.
 
 <footer>
 
-"Understanding society requires understanding choices."
-
-<br><br>
-
-Economics Portfolio
+© 2026 Your Name. Built with curiosity.
 
 </footer>
 
+
+
+
+
+<script>
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+
+document.querySelectorAll(".fade")
+.forEach(el=>observer.observe(el));
+
+
+</script>
 
 
 </body>
