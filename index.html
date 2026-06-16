@@ -4,217 +4,293 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kevin | Economics & Research</title>
+<title>Kevin | Personal Website</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", "Segoe UI", sans-serif;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Inter","Segoe UI",Arial,sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
 
-body {
-    background: #070b18;
-    color: #f5f7ff;
-    line-height: 1.6;
+body{
+    background:#080c18;
+    color:#f5f7ff;
+    line-height:1.7;
 }
+
 
 /* Navigation */
 
-nav {
-    position: fixed;
+nav{
+    position:fixed;
     top:0;
     width:100%;
     padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(7,11,24,0.75);
-    backdrop-filter: blur(12px);
-    z-index:100;
+    background:rgba(8,12,24,0.75);
+    backdrop-filter:blur(15px);
+    z-index:99;
 }
 
-.logo {
-    font-size:22px;
+.logo{
+    font-size:24px;
     font-weight:700;
 }
 
-nav a {
-    color:#ccc;
+
+nav a{
+    color:#b8bfd6;
     text-decoration:none;
     margin-left:25px;
     transition:.3s;
 }
 
-nav a:hover {
+
+nav a:hover{
     color:#6ea8ff;
 }
+
 
 
 /* Hero */
 
-.hero {
+.hero{
+
     min-height:100vh;
     display:flex;
     align-items:center;
-    justify-content:center;
     padding:120px 10%;
+
 }
 
-.hero-content {
-    max-width:900px;
-}
 
-.hero h1 {
-    font-size:64px;
+.hero h1{
+
+    font-size:70px;
     margin-bottom:20px;
+
 }
 
-.hero span {
+
+.hero span{
+
     color:#6ea8ff;
+
 }
 
-.hero p {
-    font-size:22px;
-    color:#b8bfd6;
+
+.hero p{
+
     max-width:700px;
+    font-size:22px;
+    color:#b9c0d8;
+
 }
 
-.buttons {
+
+.buttons{
+
     margin-top:35px;
+
 }
 
-button {
-    padding:14px 28px;
+
+button{
+
+    padding:14px 30px;
     border-radius:30px;
     border:none;
-    margin-right:15px;
     cursor:pointer;
     font-size:16px;
+    margin-right:15px;
     transition:.3s;
+
 }
 
-.primary {
+
+.primary{
+
     background:#6ea8ff;
     color:white;
+
 }
 
-.secondary {
+
+.secondary{
+
     background:transparent;
-    border:1px solid #555;
     color:white;
+    border:1px solid #555;
+
 }
 
-button:hover {
-    transform:translateY(-3px);
+
+button:hover{
+
+    transform:translateY(-4px);
+
 }
+
 
 
 /* Sections */
 
-section {
+
+section{
+
     padding:100px 10%;
+
 }
 
-.title {
-    font-size:40px;
-    margin-bottom:50px;
+
+.title{
+
+    font-size:42px;
+    margin-bottom:45px;
+
 }
 
-.grid {
+
+.grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:25px;
+
 }
 
 
-.card {
+.card{
+
     background:#11182c;
     padding:30px;
     border-radius:20px;
     border:1px solid rgba(255,255,255,.08);
     transition:.4s;
+
 }
 
-.card:hover {
+
+.card:hover{
+
     transform:translateY(-8px);
     border-color:#6ea8ff;
+
 }
 
-.card h3 {
-    margin-bottom:15px;
+
+.card h3{
+
     color:#8ab8ff;
+    margin-bottom:15px;
+
 }
 
 
-/* Quote */
 
-.quote {
+/* Philosophy */
+
+
+.quote{
+
+    padding:90px 15%;
     text-align:center;
-    background:#0d1326;
-    padding:80px 15%;
-    font-size:28px;
+    background:#0e1529;
+    font-size:30px;
     font-style:italic;
+
 }
 
 
-/* Timeline */
 
-.timeline div {
-    margin-bottom:20px;
-    padding:25px;
+
+/* Contact */
+
+
+.contact-box{
+
     background:#11182c;
-    border-radius:15px;
+    padding:35px;
+    border-radius:20px;
+
 }
 
 
-/* Footer */
+.contact-box p{
 
-footer {
-    text-align:center;
-    padding:40px;
-    color:#888;
+    margin:15px 0;
+
 }
+
 
 
 /* Animation */
 
-.fade {
+
+.fade{
+
     opacity:0;
     transform:translateY(30px);
     transition:1s;
+
 }
 
-.fade.show {
+
+.fade.show{
+
     opacity:1;
     transform:none;
+
 }
+
+
+
+
+footer{
+
+    text-align:center;
+    padding:40px;
+    color:#888;
+
+}
+
+
 
 
 @media(max-width:700px){
 
 .hero h1{
-    font-size:42px;
+
+    font-size:45px;
+
 }
+
 
 .hero p{
+
     font-size:18px;
+
 }
 
-nav {
-    padding:15px;
-}
 
-nav div:last-child {
+nav div:last-child{
+
     display:none;
-}
 
 }
+
+
+}
+
 </style>
 
 </head>
@@ -224,145 +300,191 @@ nav div:last-child {
 
 
 <nav>
+
 <div class="logo">
-YOUR NAME
+Kevin
 </div>
 
+
 <div>
+
 <a href="#about">About</a>
-<a href="#work">Work</a>
+<a href="#interests">Interests</a>
 <a href="#contact">Contact</a>
+
 </div>
+
 </nav>
+
+
 
 
 
 <section class="hero">
 
-<div class="hero-content fade">
+
+<div class="fade">
+
 
 <h1>
-Hello, I'm <span>Your Name</span>.
+
+Hello, I'm <span>Kevin</span>.
+
 </h1>
 
+
 <p>
-A student exploring economics, mathematics, history and philosophy.
-I am interested in understanding how institutions shape human societies.
+
+A student interested in exploring ideas, knowledge and the connections between different fields.
+
 </p>
+
 
 
 <div class="buttons">
 
-<a href="#work">
+<a href="#about">
+
 <button class="primary">
-View My Work
+
+Explore
+
 </button>
+
 </a>
 
 
 <a href="#contact">
+
 <button class="secondary">
-Contact Me
+
+Contact
+
 </button>
+
 </a>
 
 </div>
 
+
 </div>
 
+
 </section>
+
+
+
 
 
 
 
 <section id="about">
 
+
 <h2 class="title fade">
+
 About Me
+
 </h2>
+
+
+<div class="card fade">
+
+
+<p>
+
+I am Kevin. This website is a place to introduce myself, share my interests, and record my journey of learning and exploration.
+
+</p>
+
+
+<p>
+
+I believe meaningful understanding comes from connecting different perspectives and continuously questioning how the world works.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="interests">
+
+
+<h2 class="title fade">
+
+Interests
+
+</h2>
+
 
 
 <div class="grid">
 
+
 <div class="card fade">
 
 <h3>
+
 Economics
+
 </h3>
 
+
 <p>
-Exploring economic theory, development, incentives and the relationship between institutions and growth.
+
+Interested in understanding how individuals, markets and societies make decisions.
+
 </p>
 
+
 </div>
+
 
 
 <div class="card fade">
 
 <h3>
+
 Mathematics
+
 </h3>
 
+
 <p>
-Using mathematical thinking and modelling to solve complex problems.
+
+Enjoy logical thinking, problem solving and discovering patterns.
+
 </p>
 
+
 </div>
+
 
 
 <div class="card fade">
 
 <h3>
+
 History & Philosophy
+
 </h3>
 
-<p>
-Studying how ideas, systems and political structures influence human civilization.
-</p>
-
-</div>
-
-
-<div class="card fade">
-
-<h3>
-Programming
-</h3>
 
 <p>
-Applying computational methods to analyze problems and build useful tools.
+
+Interested in ideas, institutions and the forces shaping human development.
+
 </p>
 
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-<section id="work">
-
-<h2 class="title fade">
-Projects & Achievements
-</h2>
-
-
-<div class="grid">
-
-
-<div class="card fade">
-
-<h3>
-Economics Research
-</h3>
-
-<p>
-Investigating economic systems, institutions and social development through research.
-</p>
 
 </div>
 
@@ -371,74 +493,18 @@ Investigating economic systems, institutions and social development through rese
 <div class="card fade">
 
 <h3>
-Mathematical Modelling
+
+Technology
+
 </h3>
 
-<p>
-Applying mathematical frameworks to understand real-world problems.
-</p>
-
-</div>
-
-
-
-
-<div class="card fade">
-
-<h3>
-Law & Economics
-</h3>
 
 <p>
-Exploring how legal structures influence economic outcomes and incentives.
+
+Interested in programming and using technology to explore possibilities.
+
 </p>
 
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-<h2 class="title fade">
-Academic Journey
-</h2>
-
-
-<div class="timeline">
-
-
-<div class="fade">
-
-<strong>
-2025 - Present
-</strong>
-
-<p>
-Independent exploration of economics, mathematics and social sciences.
-</p>
-
-</div>
-
-
-
-<div class="fade">
-
-<strong>
-Competitions & Research
-</strong>
-
-<p>
-Mathematical competitions, economics projects and academic writing.
-</p>
 
 </div>
 
@@ -447,6 +513,7 @@ Mathematical competitions, economics projects and academic writing.
 
 
 </section>
+
 
 
 
@@ -456,8 +523,7 @@ Mathematical competitions, economics projects and academic writing.
 
 <div class="quote">
 
-"The world is not only a collection of facts,
-but a system of relationships waiting to be understood."
+"Curiosity is the beginning of understanding."
 
 </div>
 
@@ -469,28 +535,23 @@ but a system of relationships waiting to be understood."
 
 <section id="contact">
 
+
 <h2 class="title fade">
+
 Contact
+
 </h2>
 
 
-<div class="card fade">
+<div class="contact-box fade">
+
 
 <p>
+
 Email:
-your.email@example.com
-</p>
 
+1466218463@qq.com
 
-<p>
-GitHub:
-github.com/yourname
-</p>
-
-
-<p>
-LinkedIn:
-linkedin.com/in/yourname
 </p>
 
 
@@ -502,9 +563,13 @@ linkedin.com/in/yourname
 
 
 
+
+
+
+
 <footer>
 
-© 2026 Your Name. Built with curiosity.
+© 2026 Kevin. All rights reserved.
 
 </footer>
 
@@ -512,11 +577,18 @@ linkedin.com/in/yourname
 
 
 
+
+
 <script>
 
-const observer = new IntersectionObserver(entries=>{
 
-entries.forEach(entry=>{
+const observer = new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(
+
+entry=>{
 
 if(entry.isIntersecting){
 
@@ -524,17 +596,30 @@ entry.target.classList.add("show");
 
 }
 
-});
+}
 
-});
+)
+
+}
+
+);
+
 
 
 document.querySelectorAll(".fade")
-.forEach(el=>observer.observe(el));
+
+.forEach(
+
+item=>observer.observe(item)
+
+);
+
 
 
 </script>
 
 
+
 </body>
+
 </html>
